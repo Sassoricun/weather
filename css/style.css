@@ -3,7 +3,7 @@
   max-width: 500px;
   margin-top: 200px;
 
-  display: none;
+  /* display: none; */
 }
 
 .search-box__title {
@@ -59,11 +59,19 @@
   border-bottom-right-radius: 3px;
 }
 
+.project {
+  position: relative;
+}
+
+.weather {
+  position: absolute;
+  top: -40%;
+  right: 0;
+}
 
 .weather-box {
   background-color: rgba(7, 8, 10, 0.223);
   width: 450px;
-  margin-top: 200px;
   float: right;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
