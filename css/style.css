@@ -195,3 +195,25 @@
 .weather-box__details-day {
   opacity: 0.6;
 }
+
+.error {
+  margin-top: 100px;
+}
+
+.error-box {
+  width: 400px;
+  background-color: #e1d7d7e6;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 70px;
+  color: rgb(18, 22, 26);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+.error-box__title {
+  font-size: 20px;
+  line-height: 32px;
+}
