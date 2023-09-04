@@ -40,16 +40,13 @@ form.onsubmit = function (e) {
       let valueDay = date.getDay();
 
 
-      function lol() {
-        // let imgDay = '../images/big/sun-big.svg'
-        // let imgEvening = '../images/big/moon-big.svg'
-        // let imgNight = '../images/big/moon-big.svg'
+      function dayIcon() {
         if (hours >= 6 && hours < 18) {
-          console.log('sun')
+          return 'images/big/sun-big.svg'
         } else if (hours >= 18 && hours < 24) {
-          console.log('evening')
+          return 'images/big/moon-big.svg'
         } else if (hours >= 0 && hours < 6) {
-          console.log('night')
+          return 'images/big/moon-big.svg'
         }
       }
 
@@ -113,7 +110,7 @@ form.onsubmit = function (e) {
                               </div>
                             </div>
                             <div class="weather-box__details-aside">
-                              <img class="weather-box__details-img" src="${lol()}" alt="">
+                              <img class="weather-box__details-img" src="${dayIcon()}" alt="">
                               <p class="weather-box__details-time">${hours}:${min}</p>
                               <p class="weather-box__details-day">${days[valueDay]}</p>
                             </div>
